@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-webscraper
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-webscraper
+  template:
+    metadata:
+      labels:
+        app: ai-webscraper
+    spec:
+      containers:
+        - name: ai-webscraper
+          image: ai-webscraper
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8501
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"

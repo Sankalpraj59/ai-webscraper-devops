@@ -1,0 +1,30 @@
+# Streamlit app UI
+streamlit
+streamlit_nested_layout
+
+# Web scraping
+beautifulsoup4
+selenium
+
+# Environment variables
+python-dotenv
+
+# LLM integration
+langchain
+langchain-core
+langchain-community
+
+# Data handling
+pandas
+
+# HTTP & parsing tools
+requests
+lxml
+html5lib
+
+
+# Optional extras (remove if not needed)
+tqdm                # for progress bars
+openpyxl            # if exporting to Excel 
+
+langchain_ollama
